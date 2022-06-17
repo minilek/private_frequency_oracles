@@ -189,6 +189,17 @@ def spike_experiments():
                     hpgq=5)
     L.append(spike7)
 
+    # run with eps=ln(4) so that q=5 in PGR
+    n = 10000
+    print_data('spike8.in', [0]*n)
+    spike8 = Params(input_file=str((dirpath / 'data' / 'spike8.in').resolve()),
+                    output_dir=str((dirpath / 'results').resolve()), num_users=n,
+                    run_timing_experiments=False, run_variance_experiments=False,
+                    universe_size=22000, debug=DEBUG, epsilon=1.386, num_trials=300,                
+                    include_rappor=False, include_pirappor=False, include_rr=False,
+                    include_hpg=False)
+    L.append(spike8)   
+
     return L
 
 def run_experiments():

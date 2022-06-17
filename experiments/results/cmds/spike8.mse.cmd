@@ -1,0 +1,1 @@
+./run_experiment --num-users=10000 --input-file=/home/minilek/git/private_frequency_oracles/experiments/data/spike8.in --output-dir=/home/minilek/git/private_frequency_oracles/experiments/results --epsilon=1.386 --universe-size=22000 --num-trials=300 --debug --include-ss --include-hr --include-rhr --include-pg --run-mse-experiments
